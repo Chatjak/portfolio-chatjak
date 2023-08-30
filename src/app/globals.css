@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 
-html{
+html {
     @apply text-xs sm:text-sm md:text-base
+}
+section{
+    padding: 1rem;
 }
 
 @layer components {
@@ -19,7 +22,22 @@ html{
     .topbar__list {
         @apply hidden sm:flex sm:block font-bold
     }
-    .topbar__item{
+
+    .topbar__item {
         @apply mr-8 pb-1 hover:border-b-4 hover:border-b-amber-400 duration-300 ease-in
+    }
+
+    .main__picture {
+        @apply flex justify-center
+    }
+
+    .section__main{
+        @apply w-full h-auto flex items-center justify-center lg:justify-normal   mb-8
+    }
+    .readmore{
+        @apply p-2 border-b-amber-400 border-b hover:bg-amber-400 hover:text-slate-950 
+    }
+    .heroImg{
+        @apply w-[300px] max-h-[300px] object-cover rounded-tl-[20%] rounded-br-[20%] shadow-lg hover:scale-125 duration-300
     }
 }

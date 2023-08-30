@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
         <Topbar />
-        <main className="max-w-5xl mx-auto">{children}</main>
+        <main className="">{children}</main>
       </body>
     </html>
   );
