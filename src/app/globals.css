@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+html{
+    @apply text-xs sm:text-sm md:text-base
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@layer components {
+    .topbar {
+        @apply sticky left-0 top-0 w-full bg-white p-4
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    .topbar__nav {
+        @apply flex items-center justify-between
+    }
+
+    .topbar__list {
+        @apply hidden sm:flex sm:block font-bold
+    }
+    .topbar__item{
+        @apply mr-8 pb-1 hover:border-b-4 hover:border-b-amber-400 duration-300 ease-in
+    }
 }
