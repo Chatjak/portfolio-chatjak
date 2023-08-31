@@ -26,12 +26,14 @@ export default function Topbar() {
             </Link>
           </li>
           <li>
-            <Link href={"/work"} className="topbar__item">
+            <Link href={"/work"} className={`topbar__item ${
+                pathname === "/work" ? "border-b-4 border-b-amber-400" : ""
+              }`}>
               Work
             </Link>
           </li>
           <li>
-            <Link href={"/contact"} className="topbar__item">
+            <Link href={"/#contact"} className="topbar__item">
               Contact
             </Link>
           </li>

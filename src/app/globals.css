@@ -6,13 +6,43 @@
 html {
     @apply text-xs sm:text-sm md:text-base
 }
-section{
+
+section {
     padding: 1rem;
 }
+@keyframes opacityKey {
+    0% {
+        transform: translateY(-4rem);
+        opacity: 0;
+    }
 
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+@keyframes leftMove {
+    0% {
+        transform: translateX(-8rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+.animation-hero-main_text{
+    animation: opacityKey 0.7s 1 ease-in;
+}
+.animation-hero-sub_text{
+    animation: leftMove 1.2s 1 ease-in;
+}
 @layer components {
     .topbar {
-        @apply sticky left-0 top-0 w-full bg-white p-4
+        @apply sticky left-0 top-0 w-full bg-white p-4 z-30
     }
 
     .topbar__nav {
@@ -20,7 +50,7 @@ section{
     }
 
     .topbar__list {
-        @apply hidden sm:flex sm:block font-bold
+        @apply  flex  font-bold
     }
 
     .topbar__item {
@@ -28,16 +58,40 @@ section{
     }
 
     .main__picture {
-        @apply flex justify-center
+    @apply  w-full flex justify-center 
     }
 
-    .section__main{
-        @apply w-full h-auto flex items-center justify-center lg:justify-normal   mb-8
+    .section__main {
+        @apply w-full h-auto flex items-center justify-center lg:justify-normal mb-8
     }
-    .readmore{
-        @apply p-2 border-b-amber-400 border-b hover:bg-amber-400 hover:text-slate-950 
+
+    .readmore {
+        @apply p-1 border-b-amber-400 border-b-4 hover:bg-amber-400 hover:text-slate-950
     }
-    .heroImg{
-        @apply w-[300px] max-h-[300px] object-cover rounded-tl-[20%] rounded-br-[20%] shadow-lg hover:scale-125 duration-300
+
+    .heroImg {
+        @apply w-[300px] max-h-[300px] object-cover mask mask-hexagon shadow-lg hover:scale-125 duration-300 transition-all
     }
+    .hero-text-main{
+        @apply text-5xl text-center lg:text-left block font-bold mb-4 
+    }
+    .work__box{
+        @apply grid grid-cols-1 sm:grid-cols-2 gap-4 m-8
+    }
+
+    .section__contact{
+        @apply max-w-5xl mx-auto py-4
+    }
+
+}
+
+
+.fullstack-bg--1 {
+    background-image: url("/assets/bg-ig.jpg"); /* Notice that "public" is not included in the path */
+    background-size: cover;
+}
+
+.fullstack-bg--2 {
+    background-image: url("/assets/bg-task.jpg"); /* Notice that "public" is not included in the path */
+    background-size: cover;
 }

@@ -9,7 +9,7 @@ export default function About() {
       </h1>
       {/* <p className="text-white text-xl font-semibold mb-4">{`Hello, I'm Chatjak Boonthiang!`}</p> */}
       <p className="text-white  font-light text-lg mb-4">
-        {` Welcome to my web profile. I'm a 23-year-old. I'm junior Fullstack
+        {` Welcome to my website. I'm a 23-year-old. I'm junior Fullstack
         Developer based in Nakhon Ratchasima, Thailand. With a Bachelor's degree
         in Computer Science from Nakhonratchasima Rajabhat University, I've
         honed my skills and knowledge to become a proficient developer ready to
@@ -19,7 +19,7 @@ export default function About() {
       <ul className="mb-8">
         <li>
           <p>
-            <span className="font-medium text-white mr-2">
+            <span className="font-medium text-white mr-2 text-lg">
               ReactJS & Next.js:
             </span>
             <span className="text-white font-light text-lg">
@@ -29,7 +29,7 @@ export default function About() {
         </li>
         <li>
           <p>
-            <span className="font-medium text-white mr-2">
+            <span className="font-medium text-white mr-2 text-lg">
               Node.js & Express:
             </span>
             <span className="text-white font-light text-lg">
@@ -39,7 +39,7 @@ export default function About() {
         </li>
         <li>
           <p>
-            <span className="font-medium text-white mr-2">MongoDB:</span>
+            <span className="font-medium text-white mr-2 text-lg">MongoDB:</span>
             <span className="text-white font-light text-lg">
               Experienced in database design, management, and integration.
             </span>
@@ -47,7 +47,7 @@ export default function About() {
         </li>
         <li>
           <p>
-            <span className="font-medium text-white mr-2">Tailwind CSS:</span>
+            <span className="font-medium text-white mr-2  text-lg">Tailwind CSS:</span>
             <span className="text-white font-light text-lg">
               Well-versed in crafting sleek and modern UIs with efficient CSS
               frameworks.
