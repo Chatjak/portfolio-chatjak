@@ -74,7 +74,7 @@ export default function Work() {
             </li>
             <li className="mt-4">
               <Link
-                href="https://github.com/Chatjak/greenhouse"
+                href="https://github.com/Chatjak/instagram-clone"
                 target="_blank"
                 className="text-4xl hover:text-amber-500 duration-300"
               >
