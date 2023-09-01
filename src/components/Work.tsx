@@ -74,7 +74,7 @@ export default function Work() {
             </li>
             <li className="mt-4">
               <Link
-                href="https://github.com/Chatjak/instagram-clone"
+                href="https://github.com/Chatjak/greenhouse"
                 target="_blank"
                 className="text-4xl hover:text-amber-500 duration-300"
               >
@@ -124,7 +124,7 @@ export default function Work() {
           <p className=" mb-4">{`I build instagram clone with backend REST API.it lets you login,make posts,give like,add comments,and fetch information from backend`}</p>
           <p className="font-semibold mb-2">Tools: Next js,express,mongodb </p>
           <Link
-            href="https://github.com/Chatjak/greenhouse"
+            href="https://github.com/Chatjak/instagram-clone"
             target="_blank"
             className="text-4xl hover:text-amber-500 duration-300"
           >
